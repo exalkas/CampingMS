@@ -1,0 +1,56 @@
+.text-input {
+  border: 1px solid #cacccd;
+  height: 50px;
+  font-size: $font-size-large;
+  font-weight: 300;
+  padding: $s-size;
+}
+
+.select {
+  @extend .text-input;
+}
+
+.textarea {
+  @extend .text-input;
+  height: 10rem;
+}
+
+.div-hoc {
+  width: 100%;
+  align-content:center;
+}
+
+.date-picker-left {
+    width: 50%;
+    float: left;
+}
+
+.date-picker-right {
+  width: 50%;
+  float: right;
+}
+
+.div-left {
+  width: 50%;
+  float: left;
+
+}
+
+.div-right {
+  width: 50%;
+  float: right;
+
+}
+
+.div-3-left {
+width: 33%;
+float:left;
+}
+.div-3-center {
+width: 34%;
+float: left;  
+}
+.div-3-right {
+  width: 33%;
+  float: right;  
+}
