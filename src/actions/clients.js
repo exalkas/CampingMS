@@ -49,8 +49,8 @@ export const startAddClient = (clientData = {}) => {
       skafiPrice='',
       skafiSumMoney='',
       prizesNum= '',
-      prizesPrice='',
-      prizesSumMoney='',
+      prizesPrice= '',
+      prizesSumMoney= '',
       notes='',
       thesi='',
       total=''
@@ -59,7 +59,7 @@ export const startAddClient = (clientData = {}) => {
       adultsNum, adultsPrice, adultsSumMoney, childrenNum,childrenPrice, childrenSumMoney, carsNum, carsPrice, carsSumMoney, 
       motosNum, motosPrice, motosSumMoney, caravansNum, caravansPrice, caravansSumMoney, skinesSmallNum, skinesSmallPrice, skinesSmallSumMoney, 
       skinesBigNum, skinesBigPrice, skinesBigSumMoney, pulmansNum, pulmansPrice, pulmansSumMoney, skafiNum, skafiPrice, skafiSumMoney, 
-      prizesNum, prizesSumMoney, notes, thesi, total};
+      prizesNum, prizesPrice, prizesSumMoney, notes, thesi, total};
 
     return database.ref(`clients`).push(client).then((ref) => {
       dispatch(addClient({

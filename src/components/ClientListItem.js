@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 import moment from 'moment';
 //import numeral from 'numeral';
 
-const ClientListItem = ({ id, telephone, email, name, fathername, surname, address, docID, plates, arrivalDate, departureDate, adultsNum, adultsPrice, adultsSumMoney, childrenNum,childrenPrice, childrenSumMoney, carsNum, carsPrice, carsSumMoney, motosNum, motosPrice, motosSumMoney, caravansNum, caravansPrice, caravansSumMoney, skinesSmallNum, skinesSmallPrice, skinesSmallSumMoney, skinesBigNum, skinesBigPrice, skinesBigSumMoney, pulmansNum, pulmansPrice, pulmansSumMoney, skafiNum, skafiPrice, skafiSumMoney, prizesNum, prizesSumMoney, notes, thesi, total }) => (
+const ClientListItem = ({ id, telephone, email, name, fathername, surname, address, docID, plates, arrivalDate, departureDate, 
+  adultsNum, adultsPrice, adultsSumMoney, childrenNum,childrenPrice, childrenSumMoney, carsNum, carsPrice, carsSumMoney, 
+  motosNum, motosPrice, motosSumMoney, caravansNum, caravansPrice, caravansSumMoney, skinesSmallNum, skinesSmallPrice, skinesSmallSumMoney, 
+  skinesBigNum, skinesBigPrice, skinesBigSumMoney, pulmansNum, pulmansPrice, pulmansSumMoney, skafiNum, skafiPrice, skafiSumMoney, 
+  prizesNum, prizesPrice, prizesSumMoney, notes, thesi, total }) => (
 
     <tr >     
       <td className="row-item">{name}</td>

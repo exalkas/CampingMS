@@ -804,36 +804,36 @@ onSubmit = (e) => {
         <div className="div-3-left">Αριθμός πριζών</div>
         <div className="div-3-center">Τιμή ανά πρίζα</div>
         <div className="div-3-right">Σύνολο για πρίζες</div>
-       </div>
+      </div>
       <div className="div-hoc">
         
         <div className="div-3-left">
-        <input
-            type="number"
-            placeholder="Πρίζες"
-            className="text-input"
-            value={this.state.prizesNum}
-            onChange={this.onPrizesNumChange}
-          />
-          </div>
-          <div className="div-3-center">
-        <input
-            type="number"
-            placeholder="Τιμή μονάδας"
-            className="text-input"
-            value={this.state.prizesPrice}
-            onChange={this.onPrizesPriceChange}
-          />
-          </div>
-          <div className="div-3-right">
-        <input
-            type="number"
-            placeholder="Σύνολο χρημάτων"
-            className="text-input"
-            value={this.state.prizesSumMoney}
-            onChange={this.onPrizesSumMoneyChange}
-          />
-          </div>          
+          <input
+              type="number"
+              placeholder="Πρίζες"
+              className="text-input"
+              value={this.state.prizesNum}
+              onChange={this.onPrizesNumChange}
+            />
+        </div>
+        <div className="div-3-center">
+          <input
+              type="number"
+              placeholder="Τιμή μονάδας"
+              className="text-input"
+              value={this.state.prizesPrice}
+              onChange={this.onPrizesPriceChange}
+            />
+        </div>
+        <div className="div-3-right">
+          <input
+              type="number"
+              placeholder="Σύνολο χρημάτων"
+              className="text-input"
+              value={this.state.prizesSumMoney}
+              onChange={this.onPrizesSumMoneyChange}
+            />
+        </div>          
       </div>
 
       

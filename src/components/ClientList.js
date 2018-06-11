@@ -46,28 +46,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(ClientList);
-
-  {/* <div className="content-container">
-    <div className="list-header">
-      <div className="show-for-desktop">Όνομα</div>
-      <div className="show-for-desktop">Επίθετο</div>
-      <div className="show-for-mobile">Τηλέφωνο</div>
-      <div className="show-for-desktop">Τηλέφωνο</div>
-      <div className="show-for-desktop">Διαβατήριο</div>
-      <div className="show-for-desktop">Πινακίδες</div>
-    </div>
-    <div className="list-body">
-    {console.log(props.client)} 
-      {        
-        props.client===undefined || props.client.length === 0 ? (
-          <div className="list-item list-item--message">
-            <span>Δεν υπάρχουν πελάτες</span>
-          </div>
-        ) : (
-            props.client.map((client) => {
-              return <ClientListItem key={client.id} {...client} />;
-            })
-          )
-      }
-    </div>
-  </div> */}
