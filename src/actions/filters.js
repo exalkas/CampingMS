@@ -1,61 +1,47 @@
-// SET_NAME_FILTER
+// SET_SURNAME_FILTER
 export const setSurnameFilter = (surname = '') => ({
   type: 'SET_SURNAME_FILTER',
   surname
 });
 
 // SET_TELEPHONE_FILTER
-export const setTelephoneFilter = (telephone) => ({
+export const setTelephoneFilter = (telephone='') => ({
   type: 'SET_TELEPHONE_FILTER',
   telephone
 });
 
 // SET_DOC_ID_FILTER
-export const setDocIDFilter = (docID) => ({
+export const setDocIDFilter = (docID='') => ({
   type: 'SET_DOC_ID_FILTER',
   docID
 });
 
 // SET_PLATES_FILTER
-export const setPlatesFilter = (plates) => ({
+export const setPlatesFilter = (plates='') => ({
   type: 'SET_PLATES_FILTER',
   plates
 });
 
-// SORT_BY_SURNAME
-export const sortBySurname = () => ({
-  type: 'SORT_BY_SURNAME'
+// SET_ARR_START_DATE
+export const setArrStartDate = (startArrDate) => ({
+  type: 'SET_ARR_START_DATE',
+  startArrDate
 });
 
-// SORT_BY_EMAIL
-export const sortByEmail = () => ({
-  type: 'SORT_BY_EMAIL'
+// SET_ARR_END_DATE
+export const setArrEndDate = (endArrDate) => ({
+  type: 'SET_ARR_END_DATE',
+  endArrDate
 });
 
-// // SET_TEXT_FILTER
-// export const setTextFilter = (text = '') => ({
-//   type: 'SET_TEXT_FILTER',
-//   text
-// });
+// SET_DEP_START_DATE
+export const setDepStartDate = (startDepDate) => ({
+  type: 'SET_DEP_START_DATE',
+  startDepDate
+});
 
-// // SORT_BY_DATE
-// export const sortByDate = () => ({
-//   type: 'SORT_BY_DATE'
-// });
-
-// // SORT_BY_AMOUNT
-// export const sortByAmount = () => ({
-//   type: 'SORT_BY_AMOUNT'
-// });
-
-// // SET_START_DATE
-// export const setStartDate = (startDate) => ({
-//   type: 'SET_START_DATE',
-//   startDate
-// });
-
-// // SET_END_DATE
-// export const setEndDate = (endDate) => ({
-//   type: 'SET_END_DATE',
-//   endDate
-// });
+// SET_DEP_END_DATE
+export const setDepEndDate = (endDepDate) => ({
+  type: 'SET_DEP_END_DATE',
+  endDepDate
+});

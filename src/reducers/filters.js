@@ -7,7 +7,10 @@ const filtersReducerDefaultState = {
   telephone:'',
   docID:'',
   plates:'',
-  sortBy: 'email' 
+  startArrDate: moment().startOf('month'),
+  endArrDate: moment().endOf('month'),
+  startDepDate: moment().startOf('month'),
+  endDepDate: moment().endOf('month')
 };
 
 export default (state = filtersReducerDefaultState, action) => {
@@ -34,15 +37,27 @@ export default (state = filtersReducerDefaultState, action) => {
         plates: action.plates
       };
 
-      case 'SORT_BY_SURNAME':
+      case 'SET_ARR_START_DATE':
       return {
         ...state,
-        sortBy: 'surname'
+        startArrDate: action.startArrDate
       };
-    case 'SORT_BY_EMAIL':
+
+    case 'SET_ARR_END_DATE':
       return {
         ...state,
-        sortBy: 'email'
+        endArrDate: action.endArrDate
+      };
+
+      case 'SET_DEP_START_DATE':
+      return {
+        ...state,
+        startDepDate: action.startDepDate
+      };
+    case 'SET_DEP_END_DATE':
+      return {
+        ...state,
+        endDepDate: action.endDepDate
       };
 
     default:
