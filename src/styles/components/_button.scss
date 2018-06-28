@@ -1,4 +1,4 @@
-.button {
+.button, .button-header, .button-filter, .button-kleisimo {
   background: $blue;
   border: none;
   color: white;
@@ -8,7 +8,7 @@
   line-height: 1;
   padding: $s-size;
   text-decoration: none;
-}
+  }
 
 .button--link {
   background: none;
@@ -16,4 +16,24 @@
 
 .button--secondary {
   background: #888;
+}
+
+.button:hover, .button-header:hover, .button-filter:hover {
+  color: orange;
+}
+
+.button-header, .button-kleisimo{
+  margin: 20px;
+}
+
+.button--delete, .button-kleisimo {
+  background:red;
+}
+
+.button--delete:hover, .button-kleisimo:hover {
+  color: #000;
+}
+
+.button-filter {
+height:50px ;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import ClientForm from './ClientForm';
-import { startAddClient } from '../actions/clients';
+import { startAddClient } from '../actions/actionsClients';
 
 export class AddClientPage extends React.Component {
   onSubmit = (client) => {

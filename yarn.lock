@@ -4640,6 +4640,10 @@ react-addons-shallow-compare@15.6.0:
     fbjs "^0.8.4"
     object-assign "^4.1.0"
 
+react-confirm-alert@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/react-confirm-alert/-/react-confirm-alert-2.0.4.tgz#beb06223078384b31b48bcacbfc3135d81bc4cd4"
+
 react-dates@12.3.0:
   version "12.3.0"
   resolved "https://registry.yarnpkg.com/react-dates/-/react-dates-12.3.0.tgz#430e5736bc655a21d9e40ab24b07b0d17d0df80a"

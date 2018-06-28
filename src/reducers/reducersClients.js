@@ -9,8 +9,17 @@ export default (state = clientsReducerDefaultState, action) => {
         ...state,
         action.client
       ];
+    case 'ADD_CLIENT_ARCHIVE':
+    return [
+      ...state,
+      action.client
+    ];
     case 'REMOVE_CLIENT':
       return state.filter(({ id }) => id !== action.id);
+
+    case 'REMOVE_BULK_CLIENT':
+      return state.filter(({ id }) => id !== action.id);
+      
     case 'EDIT_CLIENT':
       return state.map((client) => {
         if (client.id === action.id) {

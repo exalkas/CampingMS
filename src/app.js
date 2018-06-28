@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import { startSetClients } from './actions/clients';
-import { login, logout } from './actions/auth';
+import { startSetClients } from './actions/actionsClients';
+import { login, logout } from './actions/actionsAuth';
 // import getVisibleClients from './selectors/clients';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
@@ -31,7 +31,7 @@ ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 //Authentication process
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    // const traxagireue=startAddClientDB();
+
     store.dispatch(login(user.uid));
     store.dispatch(startSetClients()).then(() => {
       renderApp();
