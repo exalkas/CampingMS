@@ -8,22 +8,26 @@ import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css' // Import css
 import database from '../firebase/firebase';
 import { firebase, googleAuthProvider } from '../firebase/firebase';
+import uuid from 'uuid';
+
 
 export const ClientsSummary = ({ clientCount }) => {
   const clientWord = clientCount === 1 ? 'άφιξη καταχωρημένη' : 'αφίξεις καταχωρημένες';
+  const uid = firebase.auth().currentUser;
 
-
-  return (
-    <div className="page-header">
-      <div className="content-container">
-        <h1 className="page-header__title"><span>{clientCount}</span> {clientWord}</h1>
-        <div className="page-header__actions">
-          <Link className="button" to="/create">Προσθήκη Άφιξης</Link>
-          <button className="button-kleisimo" onClick={confirmation}>Κλείσιμο Ημέρας</button>
+    return (    
+      <div className="page-header">
+        <div className="content-container">
+          <h1 className="page-header__title"><span>{clientCount}</span> {clientWord}</h1>
+          <div className="page-header__actions">
+            <Link className="button" to="/create">Προσθήκη Άφιξης</Link>
+            {uid.email=='rdxtbl@gmail.com' || uid.email=='dermatakis@gmail.com' ?   null :  <button className="button-kleisimo" onClick={confirmation}>Κλείσιμο Λογαριασμού</button>}
+            
+    
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
 };
 
 const confirmation = () => {
@@ -33,7 +37,7 @@ const confirmation = () => {
     buttons: [
       {
         label: 'Ναι',
-        onClick: () => {console.log("Confirmation received!");
+        onClick: () => { //console.log("Confirmation received!");
                       klisimoHandler()}
       },
       {
@@ -48,19 +52,19 @@ const confirmation = () => {
 const klisimoHandler = () => {
    visibleClients.forEach((record) => {
      //console.log(record);  
-     console.log("Will send id="+record.id);
+    // console.log("Will send id="+record.id);
     //  startAddClient({record});
     //  startRemoveClient({ id: record.id });
 
     database.ref(`clients/${record.id}`).remove().then(() => {
-      console.log("Item removed ok!");
+      //console.log("Item removed ok!");
     }).catch(function(error) {
       console.log("Remove failed: " + error.message)
     });
 
     database.ref(`clientsArchive`).push(record).then((ref) => {
       
-      console.log("Well add client should be done by now");
+      //console.log("Well add client should be done by now");
     }).catch(function(error) {
       console.log("Add client failed: " + error.message)
     });

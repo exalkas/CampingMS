@@ -7,10 +7,10 @@ const filtersReducerDefaultState = {
   telephone:'',
   docID:'',
   plates:'',
-  startArrDate: moment().startOf('month'),
-  endArrDate: moment().endOf('month'),
-  startDepDate: moment().startOf('month'),
-  endDepDate: moment().endOf('month')
+  startArrDate: undefined,  //moment().startOf('month'),
+  endArrDate:  undefined, //moment().endOf('month'),
+  startDepDate: undefined, //moment().startOf('month'),
+  endDepDate: undefined //moment().endOf('month')
 };
 
 export default (state = filtersReducerDefaultState, action) => {

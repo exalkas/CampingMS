@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ClientListItem from './ClientListItem';
+// import ClientListItem from './ClientListItem';
 import selectClients from '../selectors/selectorClients';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
@@ -41,6 +41,10 @@ export const ClientList = (props) => (
             {Header:"Αναχώριση",
             accessor:"departureDate",
             Cell: ({value}) => (moment(value).format('DD/MM/YY'))},
+            {Header:"Διανυκτερεύσεις",
+            accessor:"dianikterefseis"},
+            {Header:"Σύνολο €",
+            accessor:"total"},
             {id:"edit",
             accessor:"id",
             Cell: ({value}) => (<Link className="list-item" to={`/edit/${value}`}><button className="button">Αλλαγή</button></Link>)} 
@@ -62,33 +66,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(ClientList);
-
-{/* <div className="content-container">
-<table>
-      <tbody>
-  <tr>
-  <th className="row-item">Όνομα</th>
-  <th className="row-item">Επίθετο</th>
-  <th className="row-item">Τηλέφωνο</th>
-  <th className="row-item">email</th>
-  <th className="row-item">Διεύθυνση</th>
-  <th className="row-item">Διαβατήριο</th>
-  <th className="row-item">Πινακίδες</th>
-  <th className="row-item">Άφιξη</th>
-  <th className="row-item">Αναχώριση</th>
-  </tr>
-
-  {        
-      props.client===undefined || props.client.length === 0 ? (
-        
-         <tr><td><h3>Δεν υπάρχουν καταχωρημένες αφίξεις</h3></td></tr>
-        
-      ) : (
-          props.client.map((client) => {
-            return <ClientListItem key={client.id} {...client} />;
-          })
-        )
-   }
-</tbody>
-</table>
-</div> */}

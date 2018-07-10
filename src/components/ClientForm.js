@@ -51,6 +51,7 @@ export default class ClientForm extends React.Component {
       notes: props.client ? props.client.notes : '',
       thesi: props.client ? props.client.thesi : '',
       total: props.client ? props.client.total : '',
+      dianikterefseis: props.client ? props.client.dianikterefseis: '',
       calendarArrivalsFocused: false,
       calendarDeparturesFocused: false,
       error: ''
@@ -298,6 +299,11 @@ onTotalChange = (e) => {
   const total = e.target.value;
   this.setState(() => ({ total }));
 };
+
+onDianikterefseisChange = (e) => {
+  const dianikterefseis = e.target.value;
+  this.setState(() => ({ dianikterefseis }));
+};
 //-----------------------------------------------
 
 onSubmit = (e) => {
@@ -351,6 +357,7 @@ onSubmit = (e) => {
         prizesSumMoney: this.state.prizesSumMoney,
         notes: this.state.notes,
         thesi: this.state.thesi,
+        dianikterefseis: this.state.dianikterefseis,
         total: this.state.total
       });
     }
@@ -441,7 +448,7 @@ onSubmit = (e) => {
               />
             </div>
             <div className="date-picker-right">
-              <p>Αναχώρηση</p>
+              <p>Πιθανή Αναχώρηση</p>
               <SingleDatePicker
                 date={this.state.departureDate} 
                 onDateChange={this.onDepartureDateChange}
@@ -841,7 +848,7 @@ onSubmit = (e) => {
 
 
         <div className="div-hoc">      
-          <div className="div-left">
+          <div className="div-3-left">
             <input
                 type="text"
                 placeholder="Θέση"
@@ -850,7 +857,16 @@ onSubmit = (e) => {
                 onChange={this.onThesiChange}
               />
           </div>
-          <div className="div-right">
+          <div className="div-3-center">
+            <input
+                type="number"
+                placeholder="Διανυκτερεύσεις"
+                className="text-input"
+                value={this.state.dianikterefseis}
+                onChange={this.onDianikterefseisChange}
+              />
+          </div>          
+          <div className="div-3-right">
             <input
                 type="number"
                 placeholder="Τελικό Σύνολο χρημάτων"

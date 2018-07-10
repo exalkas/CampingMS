@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter, { history } from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import { startSetClients } from './actions/actionsClients';
+import { startSetClients, startSetClientsArchive } from './actions/actionsClients';
 import { login, logout } from './actions/actionsAuth';
 // import getVisibleClients from './selectors/clients';
 import 'normalize.css/normalize.css';
@@ -30,15 +30,34 @@ ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
 //Authentication process
 firebase.auth().onAuthStateChanged((user) => {
-  if (user) {
+  
+  if (user && (user.email=='rdxtbl@gmail.com' || user.email=='roviescamping@gmail.com' || user.email=='dermatakis@gmail.com')) {
+    
 
+    // if(user.displayName==='Alkis Kastrisios') console.log("Γεια σου ρε φίλε!");
     store.dispatch(login(user.uid));
-    store.dispatch(startSetClients()).then(() => {
-      renderApp();
-      if (history.location.pathname === '/') {
-        history.push('/dashboard');
-      }
-    });
+
+    if (user.email=='rdxtbl@gmail.com' )  {
+
+      store.dispatch(startSetClientsArchive()).then(() => {
+        renderApp();
+        if (history.location.pathname === '/') {
+          history.push('/dashboard');
+        }
+      });
+    
+
+    }
+    else {
+      store.dispatch(startSetClients()).then(() => {
+        renderApp();
+        if (history.location.pathname === '/') {
+          history.push('/dashboard');
+        }
+      });
+  
+    }
+
   } else {
     store.dispatch(logout());
     renderApp();
