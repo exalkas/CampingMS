@@ -483,7 +483,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-center">
           <input
-              type="number"
+              type="text"
               placeholder="Τιμή ανά ενήλικα"
               className="text-input"
               value={this.state.adultsPrice}
@@ -492,7 +492,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-right">
           <input
-              type="number"
+              type="text"
               placeholder="Σύνολο χρημάτων"
               className="text-input"
               value={this.state.adultsSumMoney}
@@ -519,7 +519,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-center">
           <input
-              type="number"
+              type="text"
               placeholder="Τιμή ανά παιδί"
               className="text-input"
               value={this.state.childrenPrice}
@@ -528,7 +528,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-right">
           <input
-              type="number"
+              type="text"
               placeholder="Σύνολο χρημάτων"
               className="text-input"
               value={this.state.childrenSumMoney}
@@ -557,7 +557,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-center">
           <input
-              type="number"
+              type="text"
               placeholder="Τιμή αυτοκινήτου"
               className="text-input"
               value={this.state.carsPrice}
@@ -566,7 +566,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-right">
           <input
-              type="number"
+              type="text"
               placeholder="Σύνολο χρημάτων"
               className="text-input"
               value={this.state.carsSumMoney}
@@ -596,7 +596,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-center">
           <input
-              type="number"
+              type="text"
               placeholder="Τιμή μοτοσυκλέτας"
               className="text-input"
               value={this.state.motosPrice}
@@ -605,7 +605,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-right">
           <input
-              type="number"
+              type="text"
               placeholder="Σύνολο χρημάτων"
               className="text-input"
               value={this.state.motosSumMoney}
@@ -635,7 +635,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-center">
           <input
-              type="number"
+              type="text"
               placeholder="Τιμή μονάδας"
               className="text-input"
               value={this.state.caravansPrice}
@@ -644,7 +644,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-right">
           <input
-              type="number"
+              type="text"
               placeholder="Σύνολο χρημάτων"
               className="text-input"
               value={this.state.caravansSumMoney}
@@ -674,7 +674,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-center">
           <input
-              type="number"
+              type="text"
               placeholder="Τιμή μονάδας"
               className="text-input"
               value={this.state.skinesSmallPrice}
@@ -683,7 +683,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-right">
           <input
-              type="number"
+              type="text"
               placeholder="Σύνολο χρημάτων"
               className="text-input"
               value={this.state.skinesSmallSumMoney}
@@ -713,7 +713,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-center">
           <input
-              type="number"
+              type="text"
               placeholder="Τιμή μονάδας"
               className="text-input"
               value={this.state.skinesBigPrice}
@@ -722,7 +722,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-right">
           <input
-              type="number"
+              type="text"
               placeholder="Σύνολο χρημάτων"
               className="text-input"
               value={this.state.skinesBigSumMoney}
@@ -752,7 +752,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-center">
           <input
-              type="number"
+              type="text"
               placeholder="Τιμή μονάδας"
               className="text-input"
               value={this.state.pulmansPrice}
@@ -761,7 +761,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-right">
           <input
-              type="number"
+              type="text"
               placeholder="Σύνολο χρημάτων"
               className="text-input"
               value={this.state.pulmansSumMoney}
@@ -789,7 +789,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-center">
           <input
-              type="number"
+              type="text"
               placeholder="Τιμή μονάδας"
               className="text-input"
               value={this.state.skafiPrice}
@@ -798,7 +798,7 @@ onSubmit = (e) => {
             </div>
             <div className="div-3-right">
           <input
-              type="number"
+              type="text"
               placeholder="Σύνολο χρημάτων"
               className="text-input"
               value={this.state.skafiSumMoney}
@@ -826,7 +826,7 @@ onSubmit = (e) => {
           </div>
           <div className="div-3-center">
             <input
-                type="number"
+                type="text"
                 placeholder="Τιμή μονάδας"
                 className="text-input"
                 value={this.state.prizesPrice}
@@ -835,7 +835,7 @@ onSubmit = (e) => {
           </div>
           <div className="div-3-right">
             <input
-                type="number"
+                type="text"
                 placeholder="Σύνολο χρημάτων"
                 className="text-input"
                 value={this.state.prizesSumMoney}
@@ -868,7 +868,7 @@ onSubmit = (e) => {
           </div>          
           <div className="div-3-right">
             <input
-                type="number"
+                type="text"
                 placeholder="Τελικό Σύνολο χρημάτων"
                 className="text-input"
                 value={this.state.total}
@@ -879,7 +879,7 @@ onSubmit = (e) => {
           
         <div className="div-hoc">
           <textarea
-              type="number"
+              type="text"
               placeholder="Παρατηρήσεις"
               className="textarea"
               value={this.state.notes}
