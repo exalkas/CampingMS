@@ -5,7 +5,7 @@ const publicPath = path.join(__dirname, '..', 'public');
 const port = process.env.PORT || 3000;
 
 //Utils
-const {sendEmail} = require('./utils/mail/mailer');
+//const {sendEmail} = require('./utils/mail/mailer');
 
 
 
