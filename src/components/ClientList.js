@@ -9,7 +9,6 @@ import moment from 'moment';
 
 
 
-
 export const ClientList = (props) => (
   <div className="page-header2-colored">
     <div className="content-container">
@@ -54,8 +53,9 @@ export const ClientList = (props) => (
     }
     </div>
   </div>
- 
 );
+
+  
 
 const mapStateToProps = (state) => {
 

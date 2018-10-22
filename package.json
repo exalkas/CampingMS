@@ -2,7 +2,7 @@
   "name": "campingmanagement",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Andrew Mead",
+  "author": "Alkis Kastrisios",
   "license": "MIT",
   "scripts": {
     "build:dev": "webpack",
@@ -13,6 +13,7 @@
     "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-cli": "6.24.1",
     "babel-core": "6.25.0",
     "babel-loader": "7.1.1",
@@ -22,6 +23,7 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "0.28.4",
+    "emailjs-com": "^2.2.4",
     "express": "^4.16.3",
     "extract-text-webpack-plugin": "3.0.0",
     "firebase": "4.2.0",
