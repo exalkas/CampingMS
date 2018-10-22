@@ -114,7 +114,7 @@ export class AddClientPage extends React.Component {
     };
 
     try {
-      const response = await axios.post('https://us11.api.mailchimp.com/3.0/lists/907adc9ecc/members/', contact,config);
+      const response = await axios.post('https://cors-anywhere.herokuapp.com/https://us11.api.mailchimp.com/3.0/lists/907adc9ecc/members/', contact,config);
       console.log(response);
    } catch (err) {
       console.log(err);
