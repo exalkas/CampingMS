@@ -37,7 +37,7 @@ firebase.auth().onAuthStateChanged((user) => {
     // if(user.displayName==='Alkis Kastrisios') console.log("Γεια σου ρε φίλε!");
     store.dispatch(login(user.uid));
 
-    if (user.email=='rdxtbl@gmail.com' )  {
+    if (user.email=='rdxtbl@gmail.com' || user.email=='dermatakis@gmail.com')  {
 
       store.dispatch(startSetClientsArchive()).then(() => {
         renderApp();

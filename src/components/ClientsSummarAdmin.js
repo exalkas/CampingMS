@@ -1,27 +1,31 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { startAddClient, startSetClients, startRemoveClient } from '../actions/actionsClients';
 import selectClients from '../selectors/selectorClients';
-import selectClientsTotal from '../selectors/clients-total';
+import selectClientsTotal, {countDianiktereuseis, countTotal} from '../selectors/clients-total';
 import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css' // Import css
-import database from '../firebase/firebase';
-import { firebase, googleAuthProvider } from '../firebase/firebase';
-import uuid from 'uuid';
+
+// import { startAddClient, startSetClients, startRemoveClient } from '../actions/actionsClients';
+// import database from '../firebase/firebase';
+// import { firebase, googleAuthProvider } from '../firebase/firebase';
+// import uuid from 'uuid';
 
 
-export const ClientsSummary = ({ clientCount }) => {
+export const ClientsSummaryAdmin = ({ clientCount, clientsDianiktereuseis, clientsTotal }) => {
   const clientWord = clientCount === 1 ? 'άφιξη καταχωρημένη' : 'αφίξεις καταχωρημένες';
-  const uid = firebase.auth().currentUser;
+  const nightsWord = clientsDianiktereuseis === 1 ? 'συνολική διανυκτέρευση' : 'συνολικές διανυκτερεύσεις';
+  const totalWord= '€ σύνολο';
+  // const uid = firebase.auth().currentUser;
 
     return (    
       <div className="page-header">
         <div className="content-container">
           <h1 className="page-header__title"><span>{clientCount}</span> {clientWord}</h1>
+          <h3>{clientsDianiktereuseis}&nbsp;{nightsWord}&nbsp;| {clientsTotal}{totalWord}</h3>
           <div className="page-header__actions">
             <Link className="button" to="/create">Προσθήκη Άφιξης</Link>
-            <button className="button-kleisimo" onClick={confirmation}>Κλείσιμο Λογαριασμού</button>
+           
             
     
           </div>
@@ -81,7 +85,9 @@ const mapStateToProps = (state) => {
 
   return {
     clientCount: visibleClients.length,
-    clientsTotal: selectClientsTotal(visibleClients)
+    clientsTotal: selectClientsTotal(visibleClients),
+    clientsDianiktereuseis: countDianiktereuseis(visibleClients),
+    clientsTotal: countTotal(visibleClients)
   };
 };
 
@@ -93,6 +99,4 @@ const mapDispatchToProps = (dispatch) => ({
 });
 //-------------------
 
-export default connect(mapStateToProps, mapDispatchToProps)(ClientsSummary);
-
-
+export default connect(mapStateToProps, mapDispatchToProps)(ClientsSummaryAdmin);

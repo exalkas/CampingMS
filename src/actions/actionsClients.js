@@ -57,13 +57,15 @@ export const startAddClient = (clientData = {}) => {
       notes='',
       thesi='',
       dianikterefseis='',
+      imeresDiamonis='',
+      totalPerDay='',
       total=''
     } = clientData;
     const client = { telephone, email, name, fathername, surname, address, docID, plates, arrivalDate, departureDate, 
       adultsNum, adultsPrice, adultsSumMoney, childrenNum,childrenPrice, childrenSumMoney, carsNum, carsPrice, carsSumMoney, 
       motosNum, motosPrice, motosSumMoney, caravansNum, caravansPrice, caravansSumMoney, skinesSmallNum, skinesSmallPrice, skinesSmallSumMoney, 
       skinesBigNum, skinesBigPrice, skinesBigSumMoney, pulmansNum, pulmansPrice, pulmansSumMoney, skafiNum, skafiPrice, skafiSumMoney, 
-      prizesNum, prizesPrice, prizesSumMoney, notes, thesi, dianikterefseis,total};
+      prizesNum, prizesPrice, prizesSumMoney, notes, thesi, imeresDiamonis, dianikterefseis,totalPerDay,total};
 
     return database.ref(`clients`).push(client).then((ref) => {
       dispatch(addClient({
@@ -123,16 +125,18 @@ export const startAddClientArchive = (clientData = {}) => {
       prizesSumMoney= '',
       notes='',
       thesi='',
+      imeresDiamonis='',
       dianikterefseis='',
+      totalPerDay='',
       total=''
     } = clientData;
     const client = { telephone, email, name, fathername, surname, address, docID, plates, arrivalDate, departureDate, 
       adultsNum, adultsPrice, adultsSumMoney, childrenNum,childrenPrice, childrenSumMoney, carsNum, carsPrice, carsSumMoney, 
       motosNum, motosPrice, motosSumMoney, caravansNum, caravansPrice, caravansSumMoney, skinesSmallNum, skinesSmallPrice, skinesSmallSumMoney, 
       skinesBigNum, skinesBigPrice, skinesBigSumMoney, pulmansNum, pulmansPrice, pulmansSumMoney, skafiNum, skafiPrice, skafiSumMoney, 
-      prizesNum, prizesPrice, prizesSumMoney, notes, thesi, dianikterefseis,total};
+      prizesNum, prizesPrice, prizesSumMoney, notes, thesi, imeresDiamonis, dianikterefseis,totalPerDay, total};
 
-    return database.ref(`clientsArchive`).push(client).then((ref) => {
+    return database.ref(`clientsArchive/`).push(client).then((ref) => {
       dispatch(addClientArchive({
         id: ref.key,
         ...client

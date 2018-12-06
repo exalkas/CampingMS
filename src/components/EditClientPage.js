@@ -19,7 +19,8 @@ export class EditClientPage extends React.Component {
     //console.log(this.state.uid.email);
     //console.log(this.props.client.id);
 
-    if (this.state.uid.email=='rdxtbl@gmail.com' || this.state.uid.email=='dermatakis@gmail.com') {
+    if (this.state.uid.email!='roviescamping@gmail.com') {
+    // if (this.state.uid.email=='rdxtbl@gmail.com' || this.state.uid.email=='dermatakis@gmail.com') {
       this.props.startEditClientArchive(this.props.client.id, client);
       this.props.history.push('/');  
     } else {

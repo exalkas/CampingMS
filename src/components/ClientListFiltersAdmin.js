@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { DateRangePicker } from 'react-dates';
-import { setSurnameFilter, setTelephoneFilter, setDocIDFilter, setPlatesFilter, setNotesFilter, setArrStartDate, setArrEndDate, setDepStartDate, setDepEndDate   } from '../actions/actionFilters';
+import { setSurnameFilter, setTelephoneFilter, setDocIDFilter, setNotesFilter, setPlatesFilter, setArrStartDate, setArrEndDate, setDepStartDate, setDepEndDate   } from '../actions/actionFilters';
 
 
 export class ClientListFilters extends React.Component {
@@ -31,27 +31,28 @@ export class ClientListFilters extends React.Component {
     this.props.setSurnameFilter(e.target.value);
   };
 
-  onTelephoneChange = (e) => {
-    this.props.setTelephoneFilter(e.target.value);
-  };
+  // onTelephoneChange = (e) => {
+  //   this.props.setTelephoneFilter(e.target.value);
+  // };
 
-  onDocIDChange = (e) => {
-    this.props.setDocIDFilter(e.target.value);
-  };
+  // onDocIDChange = (e) => {
+  //   this.props.setDocIDFilter(e.target.value);
+  // };
 
-  onPlatesChange = (e) => {
-    this.props.setPlatesFilter(e.target.value);
-  };
+  // onPlatesChange = (e) => {
+  //   this.props.setPlatesFilter(e.target.value);
+  // };
 
   onNotesChange = (e) => {
     this.props.setNotesFilter(e.target.value);
   };
 
+
   ClearInputs =() => {
     this.props.setSurnameFilter("");
-    this.props.setTelephoneFilter("");
-    this.props.setDocIDFilter("");
-    this.props.setPlatesFilter("");
+    // this.props.setTelephoneFilter("");
+    // this.props.setDocIDFilter("");
+    // this.props.setPlatesFilter("");
     this.props.setNotesFilter("");
     this.props.setArrStartDate(undefined);
     this.props.setArrEndDate(undefined);
@@ -75,7 +76,7 @@ export class ClientListFilters extends React.Component {
                 onChange={this.onSurnameChange}
               />
             </div>
-            <div className="input-group__item">
+            {/* <div className="input-group__item">
             <input
                 type="text"
                 className="text-input"
@@ -101,8 +102,7 @@ export class ClientListFilters extends React.Component {
                 value={this.props.filters.plates}
                 onChange={this.onPlatesChange}
               />         
-            </div>
-
+            </div> */}
             <div className="input-group__item">
             <input
                 type="text"
@@ -112,7 +112,6 @@ export class ClientListFilters extends React.Component {
                 onChange={this.onNotesChange}
               />         
             </div>
-
             <div className="input-group__item">
             <button
                 className="button-filter"
@@ -164,9 +163,9 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   setSurnameFilter: (surname) => dispatch(setSurnameFilter(surname)),
-  setTelephoneFilter: (telephone) => dispatch(setTelephoneFilter(telephone)),
-  setDocIDFilter: (docID) => dispatch(setDocIDFilter(docID)),
-  setPlatesFilter: (plates) => dispatch(setPlatesFilter(plates)),
+  // setTelephoneFilter: (telephone) => dispatch(setTelephoneFilter(telephone)),
+  // setDocIDFilter: (docID) => dispatch(setDocIDFilter(docID)),
+  // setPlatesFilter: (plates) => dispatch(setPlatesFilter(plates)),
   setNotesFilter: (notes) => dispatch(setNotesFilter(notes)),
   setArrStartDate: (startArrDate) => dispatch(setArrStartDate(startArrDate)),
   setArrEndDate: (endArrDate) => dispatch(setArrEndDate(endArrDate)),

@@ -2,7 +2,7 @@ import moment from 'moment';
 
 // Get visible clients
 
-export default (clients, { surname, telephone, docID, plates, startArrDate,endArrDate,startDepDate, endDepDate }) => {
+export default (clients, { surname, telephone, docID, plates, notes, startArrDate,endArrDate,startDepDate, endDepDate }) => {
   return clients.filter((client) => {
     
     const createdArrDate = moment(client.arrivalDate);
@@ -19,7 +19,8 @@ export default (clients, { surname, telephone, docID, plates, startArrDate,endAr
     const telephoneMatch = client.telephone.toLowerCase().includes(telephone.toLowerCase());
     const docIDMatch = client.docID.toLowerCase().includes(docID.toLowerCase());
     const platesMatch = client.plates.toLowerCase().includes(plates.toLowerCase());
+    const notesMatch = client.notes.toLowerCase().includes(notes.toLowerCase());
 
-    return surnameMatch && telephoneMatch && docIDMatch && platesMatch && startArrDateMatch && endArrDateMatch && startDepDateMatch && endDepDateMatch;
+    return surnameMatch && telephoneMatch && docIDMatch && platesMatch && notesMatch && startArrDateMatch && endArrDateMatch && startDepDateMatch && endDepDateMatch;
   })
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-// import ClientListItem from './ClientListItem';
+
 import selectClients from '../selectors/selectorClients';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom';
 import moment from 'moment';
 
 
-export const ClientList = (props) => (
+export const ClientList = (props) =>  (
+  
   <div className="page-header2-colored">
     <div className="content-container">
     {
@@ -26,20 +27,18 @@ export const ClientList = (props) => (
             accessor:"telephone"},
             {Header:"email",
             accessor:"email"},
-            {Header:"Διεύθυνση",
-            accessor:"address"},
-            {Header:"Διαβατήριο",
-            accessor:"docID"},
-            {Header:"Πινακίδες",
-            accessor:"plates"},
             {Header:"Άφιξη",
             accessor: "arrivalDate",
             Cell: ({value}) => (moment(value).format('DD/MM/YY'))},
             {Header:"Αναχώριση",
             accessor:"departureDate",
             Cell: ({value}) => (moment(value).format('DD/MM/YY'))},
+            {Header:"Ημέρες Διαμονής",
+            accessor:"imeresDiamonis"},
             {Header:"Διανυκτερεύσεις",
             accessor:"dianikterefseis"},
+            {Header:"Παρατηρήσεις",
+            accessor:"notes"},
             {Header:"Σύνολο €",
             accessor:"total"},
             {id:"edit",
@@ -52,6 +51,7 @@ export const ClientList = (props) => (
     </div>
   </div>
 )
+
 
   
 

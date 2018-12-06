@@ -16,6 +16,12 @@ export const setDocIDFilter = (docID='') => ({
   docID
 });
 
+// SET_NOTES_FILTER
+export const setNotesFilter = (notes='') => ({
+  type: 'SET_NOTES_FILTER',
+  notes
+});
+
 // SET_PLATES_FILTER
 export const setPlatesFilter = (plates='') => ({
   type: 'SET_PLATES_FILTER',

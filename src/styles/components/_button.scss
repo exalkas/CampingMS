@@ -10,6 +10,22 @@
   text-decoration: none;
   }
 
+ .button-container {
+  background: $blue;
+  border: none;
+  color: white;
+  //display: inline-block;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: $font-size-large;
+  font-weight: 300;
+  //padding: $s-size;
+  text-decoration: none;
+  line-height: 40px; 
+  height:40px;
+  width: 100%;
+ } 
+
 .button--link {
   background: none;
 }
@@ -18,7 +34,7 @@
   background: #888;
 }
 
-.button:hover, .button-header:hover, .button-filter:hover {
+.button:hover, .button-header:hover, .button-filter:hover, .button-container:hover {
   color: orange;
 }
 

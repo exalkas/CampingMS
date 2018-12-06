@@ -7,6 +7,7 @@ const filtersReducerDefaultState = {
   telephone:'',
   docID:'',
   plates:'',
+  notes:'',
   startArrDate: undefined,  //moment().startOf('month'),
   endArrDate:  undefined, //moment().endOf('month'),
   startDepDate: undefined, //moment().startOf('month'),
@@ -36,7 +37,11 @@ export default (state = filtersReducerDefaultState, action) => {
         ...state,
         plates: action.plates
       };
-
+      case 'SET_NOTES_FILTER':
+      return {
+        ...state,
+        notes: action.notes
+      };
       case 'SET_ARR_START_DATE':
       return {
         ...state,

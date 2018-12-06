@@ -1,9 +1,9 @@
 .text-input {
   border: 1px solid #cacccd;
-  height: 50px;
+  height: 40px;
   font-size: $font-size-large;
   font-weight: 300;
-  padding: $s-size;
+  padding-left: $s-size;
 }
 
 .select {
@@ -53,4 +53,32 @@ float: left;
 .div-3-right {
   width: 33%;
   float: right;  
+}
+
+.div-normal-166-left-text {
+  width: 16%;
+  float: left;
+  margin-left: 1%;
+  height: 40px;
+  line-height: 40px;
+}
+
+.div-normal-48-left-text {
+  width: 48%;
+  float: left;
+  margin-left: 1%;
+  // height: 40px;
+  // line-height: 40px;
+}
+
+.div-normal-25-left-text {
+  width: 25%;
+  float: left;
+  margin-left: 1%;
+
+}
+
+.div-normal-166-left-input .text-input{
+  width: 16%;
+  float: left;  
 }
