@@ -16,10 +16,10 @@ const DashboardPage = () => {
   return (
   <div>
 
-    {uid.email=='rdxtbl@gmail.com' || uid.email=='dermatakis@gmail.com' ?  <ClientsSummaryAdmin /> : <ClientsSummary />}
+    {uid.email!='roviescamping@gmail.com' ?  <ClientsSummaryAdmin /> : <ClientsSummary />}
     
-    {uid.email=='rdxtbl@gmail.com' || uid.email=='dermatakis@gmail.com' ?  <ClientListFiltersAdmin /> : <ClientListFilters />}
-    {uid.email=='rdxtbl@gmail.com' || uid.email=='dermatakis@gmail.com' ?  <ClientListAdmin /> : <ClientList />}
+    {uid.email!='roviescamping@gmail.com' ?  <ClientListFiltersAdmin /> : <ClientListFilters />}
+    {uid.email!='roviescamping@gmail.com' ?  <ClientListAdmin /> : <ClientList />}
     
   </div>
 );}
