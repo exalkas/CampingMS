@@ -509,8 +509,8 @@ onSubmit = (e) => {
 
 
         <div className="div-hoc">
-          <div className="div-normal-166-left-text">Αριθμός ενηλίκων</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Αριθμός ενηλίκων</div>
+          <div className="div-normal-7-left-input">
           <input //ENILIKES
               type="number"
               placeholder="0"
@@ -519,8 +519,8 @@ onSubmit = (e) => {
               onChange={this.onAdultsNumChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Τιμή ανά ενήλικα</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Τιμή ανά ενήλικα</div>
+          <div className="div-normal-7-left-input">
           <input  //TIMI ANA ENILIKA
               type="text"
               placeholder="0"
@@ -529,8 +529,8 @@ onSubmit = (e) => {
               onChange={this.onAdultsPriceChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Σύνολο για ενήλικες</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Σύνολο για ενήλικες</div>
+          <div className="div-normal-7-left-input">
           <input //SINOLO XRIMATON
               type="text"
               placeholder="0"
@@ -543,8 +543,8 @@ onSubmit = (e) => {
 
 
         <div className="div-hoc">
-          <div className="div-normal-166-left-text">Αριθμός παιδιών έως 10 ετών</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Αριθμός παιδιών έως 10 ετών</div>
+          <div className="div-normal-7-left-input">
           <input // Παιδιά έως 10 ετών
               type="number"
               placeholder="0"
@@ -553,8 +553,8 @@ onSubmit = (e) => {
               onChange={this.onChildrenNumChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Τιμή ανά παιδί</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Τιμή ανά παιδί</div>
+          <div className="div-normal-7-left-input">
           <input //Τιμή ανά παιδί
               type="text"
               placeholder="0"
@@ -563,8 +563,8 @@ onSubmit = (e) => {
               onChange={this.onChildrenPriceChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Σύνολο για παιδιά</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Σύνολο για παιδιά</div>
+          <div className="div-normal-7-left-input">
           <input //Σύνολο χρημάτων
               type="text"
               placeholder="0"
@@ -576,8 +576,8 @@ onSubmit = (e) => {
         </div>
 
         <div className="div-hoc">
-          <div className="div-normal-166-left-text">Αριθμός αυτοκινήτων</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Αριθμός αυτοκινήτων</div>
+          <div className="div-normal-7-left-input">
           <input //Αυτοκίνητα
               type="number"
               placeholder="0"
@@ -586,8 +586,8 @@ onSubmit = (e) => {
               onChange={this.onCarsNumChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Τιμή ανά αυτοκίνητο</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Τιμή ανά αυτοκίνητο</div>
+          <div className="div-normal-7-left-input">
           <input //Τιμή αυτοκινήτου
               type="text"
               placeholder="0"
@@ -596,8 +596,8 @@ onSubmit = (e) => {
               onChange={this.onCarsPriceChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Σύνολο για αυτοκίνητα</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Σύνολο για αυτοκίνητα</div>
+          <div className="div-normal-7-left-input">
           <input //Σύνολο χρημάτων
               type="text"
               placeholder="0"
@@ -609,8 +609,8 @@ onSubmit = (e) => {
         </div>
 
     <div className="div-hoc">
-          <div className="div-normal-166-left-text">Αριθμός Μοτοσυκλετών</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Αριθμός Μοτοσυκλετών</div>
+          <div className="div-normal-7-left-input">
           <input //Μοτοσυκλέτες
               type="number"
               placeholder="0"
@@ -619,8 +619,8 @@ onSubmit = (e) => {
               onChange={this.onMotosNumChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Τιμή ανά μοτοσυκλέτα</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Τιμή ανά μοτοσυκλέτα</div>
+          <div className="div-normal-7-left-input">
           <input //Τιμή μοτοσυκλέτας
               type="text"
               placeholder="0"
@@ -629,8 +629,8 @@ onSubmit = (e) => {
               onChange={this.onMotosPriceChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Σύνολο για μοτοσυκλέτες</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Σύνολο για μοτοσυκλέτες</div>
+          <div className="div-normal-7-left-input">
           <input //Σύνολο χρημάτων
               type="text"
               placeholder="0"
@@ -642,8 +642,8 @@ onSubmit = (e) => {
         </div>
 
     <div className="div-hoc">
-          <div className="div-normal-166-left-text">Αριθμός τροχοσκηνών</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Αριθμός τροχοσκηνών</div>
+          <div className="div-normal-7-left-input">
           <input //Τροχόσπιτα-τροχοσκηνές
               type="number"
               placeholder="0"
@@ -652,8 +652,8 @@ onSubmit = (e) => {
               onChange={this.onCaravansNumChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Τιμή τροχοσκηνής</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Τιμή τροχοσκηνής</div>
+          <div className="div-normal-7-left-input">
           <input //Τιμή μονάδας
               type="text"
               placeholder="0"
@@ -662,8 +662,8 @@ onSubmit = (e) => {
               onChange={this.onCaravansPriceChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Σύνολο για τροχοσκηνές</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Σύνολο για τροχοσκηνές</div>
+          <div className="div-normal-7-left-input">
           <input //Σύνολο χρημάτων
               type="text"
               placeholder="0"
@@ -675,8 +675,8 @@ onSubmit = (e) => {
         </div>
 
     <div className="div-hoc">
-          <div className="div-normal-166-left-text">Αριθμός μικρών σκηνών</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Αριθμός μικρών σκηνών</div>
+          <div className="div-normal-7-left-input">
           <input //Μικρές σκηνές
               type="number"
               placeholder="0"
@@ -685,8 +685,8 @@ onSubmit = (e) => {
               onChange={this.onSkinesSmallNumChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Τιμή ανά μικρή σκηνή</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Τιμή ανά μικρή σκηνή</div>
+          <div className="div-normal-7-left-input">
           <input //Τιμή μονάδας
               type="text"
               placeholder="0"
@@ -695,8 +695,8 @@ onSubmit = (e) => {
               onChange={this.onSkinesSmallPriceChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Σύνολο για μικρές σκηνές</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Σύνολο για μικρές σκηνές</div>
+          <div className="div-normal-7-left-input">
           <input //Σύνολο χρημάτων
               type="text"
               placeholder="0"
@@ -708,8 +708,8 @@ onSubmit = (e) => {
         </div>
 
     <div className="div-hoc">
-          <div className="div-normal-166-left-text">Αριθμός μεγάλων σκηνών</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Αριθμός μεγάλων σκηνών</div>
+          <div className="div-normal-7-left-input">
           <input //Μεγάλες σκηνές
               type="number"
               placeholder="0"
@@ -718,8 +718,8 @@ onSubmit = (e) => {
               onChange={this.onSkinesBigNumChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Τιμή ανά μεγάλη σκηνή</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Τιμή ανά μεγάλη σκηνή</div>
+          <div className="div-normal-7-left-input">
           <input //Τιμή μονάδας
               type="text"
               placeholder="0"
@@ -728,8 +728,8 @@ onSubmit = (e) => {
               onChange={this.onSkinesBigPriceChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Σύνολο για μεγάλες σκηνές</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Σύνολο για μεγάλες σκηνές</div>
+          <div className="div-normal-7-left-input">
           <input //Σύνολο χρημάτων
               type="text"
               placeholder="0"
@@ -741,8 +741,8 @@ onSubmit = (e) => {
         </div>
 
     <div className="div-hoc">
-          <div className="div-normal-166-left-text">Αριθμός πούλμαν</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Αριθμός πούλμαν</div>
+          <div className="div-normal-7-left-input">
           <input //Πούλμαν
               type="number"
               placeholder="0"
@@ -751,8 +751,8 @@ onSubmit = (e) => {
               onChange={this.onPulmansNumChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Τιμή ανά πούλμαν</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Τιμή ανά πούλμαν</div>
+          <div className="div-normal-7-left-input">
           <input //Τιμή μονάδας
               type="text"
               placeholder="0"
@@ -761,8 +761,8 @@ onSubmit = (e) => {
               onChange={this.onPulmansPriceChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Σύνολο για πούλμαν</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Σύνολο για πούλμαν</div>
+          <div className="div-normal-7-left-input">
           <input //Σύνολο χρημάτων
               type="text"
               placeholder="0"
@@ -774,8 +774,8 @@ onSubmit = (e) => {
         </div>
 
         <div className="div-hoc">
-          <div className="div-normal-166-left-text">Αριθμός σκαφών με τρέιλερ</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Αριθμός σκαφών με τρέιλερ</div>
+          <div className="div-normal-7-left-input">
           <input //Σκάφος με τρέιλερ
               type="number"
               placeholder="0"
@@ -784,8 +784,8 @@ onSubmit = (e) => {
               onChange={this.onSkafiNumChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Τιμή ανά σκάφος με τρέιλερ</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Τιμή ανά σκάφος με τρέιλερ</div>
+          <div className="div-normal-7-left-input">
           <input //Τιμή μονάδας
               type="text"
               placeholder="0"
@@ -794,8 +794,8 @@ onSubmit = (e) => {
               onChange={this.onSkafiPriceChange}
             />
             </div>
-          <div className="div-normal-166-left-text">Σύνολο για σκάφη με τρέιλερ</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Σύνολο για σκάφη με τρέιλερ</div>
+          <div className="div-normal-7-left-input">
           <input //Σύνολο χρημάτων
               type="text"
               placeholder="0"
@@ -807,8 +807,8 @@ onSubmit = (e) => {
         </div>
 
         <div className="div-hoc">
-          <div className="div-normal-166-left-text">Αριθμός πριζών</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Αριθμός πριζών</div>
+          <div className="div-normal-7-left-input">
             <input //Πρίζες
                 type="number"
                 placeholder="0"
@@ -817,8 +817,8 @@ onSubmit = (e) => {
                 onChange={this.onPrizesNumChange}
               />
           </div>
-          <div className="div-normal-166-left-text">Τιμή ανά πρίζα</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Τιμή ανά πρίζα</div>
+          <div className="div-normal-7-left-input">
             <input //Τιμή μονάδας
                 type="text"
                 placeholder="0"
@@ -827,8 +827,8 @@ onSubmit = (e) => {
                 onChange={this.onPrizesPriceChange}
               />
           </div>
-          <div className="div-normal-166-left-text">Σύνολο για πρίζες</div>
-          <div className="div-normal-166-left-input">
+          <div className="div-normal-25-left-text">Σύνολο για πρίζες</div>
+          <div className="div-normal-7-left-input">
             <input //Σύνολο χρημάτων
                 type="text"
                 placeholder="0"
@@ -840,18 +840,18 @@ onSubmit = (e) => {
         </div>    
 
         <div className="div-hoc">      
-          <div className="div-normal-166-left-text">Θέση</div>
-          <div className="div-normal-166-left-input">
-            <input //Θέση
+          <div className="div-normal-25-left-text">Τελικό Σύνολο χρημάτων</div>
+          <div className="div-normal-7-left-input">
+            <input //Τελικό Σύνολο χρημάτων
                 type="text"
                 placeholder="0"
                 className="text-input"
-                value={this.state.thesi}
-                onChange={this.onThesiChange}
+                value={this.state.total}
+                onChange={this.onTotalChange}
               />
-          </div>
-          <div className="div-normal-166-left-text">Ημέρες Διαμονής</div>
-          <div className="div-normal-166-left-input">
+          </div>  
+          <div className="div-normal-25-left-text">Ημέρες Διαμονής</div>
+          <div className="div-normal-7-left-input">
             <input //Ημέρες Διαμονής
                 type="number"
                 placeholder="0"
@@ -859,17 +859,23 @@ onSubmit = (e) => {
                 value={this.state.imeresDiamonis}
                 onChange={this.onImeresDiamonisChange}
               /></div>
-          <div className="div-normal-166-left-text">Διανυκτερεύσεις</div>
-          <div className="div-normal-166-left-input">
-            <input //Διανυκτερεύσεις
-                type="number"
+          <div className="div-normal-25-left-text">Σύνολο ανά διανυκτέρευση</div>
+          <div className="div-normal-7-left-input">
+            <input //Σύνολο ανά διανυκτέρευση
+                type="text"
                 placeholder="0"
                 className="text-input"
-                value={this.state.dianikterefseis}
-                onChange={this.onDianikterefseisChange}
-              /></div>          
+                value={this.state.totalPerDay}
+                onChange={this.onTotaPerDayChange}
+              />
+          </div>  
           </div>          
                      
+
+        {/* //empty rows                      */}
+        <div className="div-hoc"></div> 
+        <div className="div-hoc"></div> 
+
         <div className="div-hoc">
           <div className="div-normal-166-left-text">Παρατηρήσεις</div>
           <div className="div-normal-166-left-input">
@@ -881,26 +887,28 @@ onSubmit = (e) => {
               onChange={this.onNotesChange}
             />
           </div>
-          <div className="div-normal-166-left-text">Σύνολο ανά διανυκτέρευση</div>
-          <div className="div-normal-166-left-input">
-            <input //Σύνολο ανά διανυκτέρευση
+
+          <div className="div-normal-25-left-text">Θέση</div>
+          <div className="div-normal-7-left-input">
+            <input //Θέση
                 type="text"
                 placeholder="0"
                 className="text-input"
-                value={this.state.totalPerDay}
-                onChange={this.onTotaPerDayChange}
+                value={this.state.thesi}
+                onChange={this.onThesiChange}
               />
-          </div>  
-          <div className="div-normal-166-left-text">Τελικό Σύνολο χρημάτων</div>
-          <div className="div-normal-166-left-input">
-            <input //Τελικό Σύνολο χρημάτων
-                type="text"
+          </div>
+
+          <div className="div-normal-25-left-text">Διανυκτερεύσεις</div>
+          <div className="div-normal-7-left-input">
+            <input //Διανυκτερεύσεις
+                type="number"
                 placeholder="0"
                 className="text-input"
-                value={this.state.total}
-                onChange={this.onTotalChange}
-              />
-          </div>  
+                value={this.state.dianikterefseis}
+                onChange={this.onDianikterefseisChange}
+              /></div>  
+
         </div>
         
           <div className="div-hoc">
