@@ -20,6 +20,7 @@ export default (state = clientsReducerDefaultState, action) => {
       return state.filter(({ id }) => id !== action.id);
 
     case 'REMOVE_CLIENT_ARCHIVE':
+    // console.log("Reducer remove client archive here");
     return state.filter(({ id }) => id !== action.id);  
    
     case 'EDIT_CLIENT':

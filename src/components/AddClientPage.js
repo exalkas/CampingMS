@@ -16,24 +16,24 @@ export class AddClientPage extends React.Component {
   state = { uid : firebase.auth().currentUser};
 
 
-  confirmation = () => {
-    confirmAlert({
-      title: 'Επιβεβαίωση διαγραφής',
-      message: 'Είστε βέβαιοι ότι θέλετε να διαγράψετε την άφιξη αυτή;',
-      buttons: [
-        {
-          label: 'Ναι',
-          onClick: () => this.onRemove()
-        },
-        {
-          label: 'Όχι',
-          onClick: () => undefined
-        }
-      ]
-    })
-  };
-//
-//
+//   confirmation = () => {
+//     confirmAlert({
+//       title: 'Επιβεβαίωση διαγραφής',
+//       message: 'Είστε βέβαιοι ότι θέλετε να διαγράψετε την άφιξη αυτή;',
+//       buttons: [
+//         {
+//           label: 'Ναι',
+//           onClick: () => this.onRemove()
+//         },
+//         {
+//           label: 'Όχι',
+//           onClick: () => undefined
+//         }
+//       ]
+//     })
+//   };
+// //
+// //
 
   onSubmit = (client) => {
     
@@ -58,7 +58,7 @@ export class AddClientPage extends React.Component {
   };
 
   writeToDB(client) {
-    if (this.state.uid.email==process.env.ADMIN_EMAIL || this.state.uid.email==process.env.OWNER_EMAIL) {
+    if (this.state.uid.email!='roviescamping@gmail.com') {
       this.props.startAddClientArchive(client);
       this.props.history.push('/');
     } else {
@@ -70,8 +70,6 @@ export class AddClientPage extends React.Component {
   }
 
   sendMail(client) {
-    // sendEmail('alkas@alkas.gr','alkis',null,'Welcome');
-
     const templateParams = {
       name: client.name,
       email: client.email

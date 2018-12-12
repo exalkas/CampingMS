@@ -16,8 +16,7 @@ export class EditClientPage extends React.Component {
 
   onSubmit = (client) => {
 
-    //console.log(this.state.uid.email);
-    //console.log(this.props.client.id);
+
 
     if (this.state.uid.email!='roviescamping@gmail.com') {
     // if (this.state.uid.email=='rdxtbl@gmail.com' || this.state.uid.email=='dermatakis@gmail.com') {
@@ -31,6 +30,7 @@ export class EditClientPage extends React.Component {
   onRemove = () => {
 
     if (this.state.uid.email=='rdxtbl@gmail.com' || this.state.uid.email=='dermatakis@gmail.com') {
+      // console.log("Edit client page user admin!");
       this.props.startRemoveClientArchive({ id: this.props.client.id });
       this.props.history.push('/');
     } else {
@@ -57,6 +57,8 @@ export class EditClientPage extends React.Component {
   };
 
   render() {
+    // console.log(this.state.uid.email);
+    // console.log(this.props.client.id);
     return (
       <div>
         <div className="page-header">

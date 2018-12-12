@@ -136,7 +136,7 @@ export const startAddClientArchive = (clientData = {}) => {
       skinesBigNum, skinesBigPrice, skinesBigSumMoney, pulmansNum, pulmansPrice, pulmansSumMoney, skafiNum, skafiPrice, skafiSumMoney, 
       prizesNum, prizesPrice, prizesSumMoney, notes, thesi, imeresDiamonis, dianikterefseis,totalPerDay, total};
 
-    return database.ref(`clientsArchive/`).push(client).then((ref) => {
+    return database.ref(`clientsArchive`).push(client).then((ref) => {
       dispatch(addClientArchive({
         id: ref.key,
         ...client
@@ -184,7 +184,7 @@ export const startRemoveClientArchive = ({ id } = {}) => {
     const uid = getState().auth.uid;
     return database.ref(`clientsArchive/${id}`).remove().then(() => {
       dispatch(removeClientArchive({ id }));
-      //console.log("Item removed ok!");
+      // console.log("Item removed ok!");
     }).catch(function(error) {
       console.log("Remove Client from Archive failed: " + error.message)
     });
