@@ -369,9 +369,9 @@ onSubmit = (e) => {
         prizesSumMoney: this.state.prizesSumMoney,
         notes: this.state.notes,
         thesi: this.state.thesi,
-        imeresDiamonis: this.state.imeresDiamonis,
+        //imeresDiamonis: this.state.imeresDiamonis,
         dianikterefseis: this.state.dianikterefseis,
-        totalPerDay: this.state.totalPerDay,
+        //totalPerDay: this.state.totalPerDay,
         total: this.state.total
       });
     }

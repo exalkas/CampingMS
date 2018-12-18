@@ -57,8 +57,9 @@ export class EditClientPage extends React.Component {
   };
 
   render() {
-    // console.log(this.state.uid.email);
-    // console.log(this.props.client.id);
+    console.log(this.state.uid.email);
+    console.log(this.props.client.id);
+    console.log(this.props.client);
     return (
       <div>
         <div className="page-header">
